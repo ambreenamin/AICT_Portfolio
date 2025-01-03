@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio and About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #111;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h2 {
+            font-size: 1.8rem;
+            color: #fbbd08;
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #fbbd08;
+            font-weight: 700;
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #111;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-section h1, .text-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .text-section h1 span {
+            color: #fbbd08;
+        }
+
+        .text-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button-group a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .hire-me {
+            background-color: #fbbd08;
+            color: #000;
+        }
+
+        .hire-me:hover {
+            background-color: #fff;
+        }
+
+        .my-works {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .my-works:hover {
+            background-color: #fbbd08;
+            color: #000;
+        }
+
+        .image-section img {
+            border-radius: 50%;
+            max-width: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .details p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .details span {
+            font-weight: bold;
+            color: #fbbd08;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .skill-title {
+            font-size: 1.2rem;
+            color: #fbbd08;
+            font-weight: 700;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fbbd08;
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h2>Ambreen Amin</h2>
+        </div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="text-section">
+                <p>Hello!</p>
+                <h1>I'm <span>Ambreen Amin</span></h1>
+                <p>Fullstack Web Developer</p>
+                <div class="button-group">
+                    <a href="#" class="hire-me">Hire Me</a>
+                    <a href="#" class="my-works">My Works</a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="amberr.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="image-section">
+                <img src="amberr.jpg" alt="Profile">
+            </div>
+            <div class="text-section">
+                <h2>About Me</h2>
+                <p>As a Full Stack Developer with over 5 years of experience, I specialize in building scalable, user-friendly applications using technologies like JavaScript (React, Node.js), Python, and Ruby on Rails. I have extensive experience in both front-end and back-end development, working with databases like MongoDB, PostgreSQL, and MySQL, as well as cloud platforms like AWS and Azure.</p>
+                <div class="details">
+                    <p><span>Name:</span> Ambreen Amin</p>
+                    <p><span>Date of Birth:</span> July 05, 2006</p>
+                    <p><span>Address:</span> Quetta Cantt, Pakistan</p>
+                    <p><span>Zip Code:</span> 1000</p>
+                    <p><span>Email:</span> amberamin576@gmail.com</p>
+                    <p><span>Phone:</span> 1234567890</p>
+                    <p><span>Projects Completed:</span> 45</p>
+                </div>
+                <a href="#" class="download-btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="text-section">
+                <h2>My Skills</h2>
+                <p>With over 5 years of experience, here are some of my key skills:</p>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-title">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Strong Communication</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Understanding Operating Systems</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Design Patterns</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">HTML & CSS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Time Management</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Analytical Skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
